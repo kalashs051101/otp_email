@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+
+<style>
+    button{
+        margin-top: 10px;
+        margin-left: 140px;
+        background-color: purple;
+        color: white;
+        padding: 5px;
+        border-radius: 10px;
+
+
+    }
+    button a{
+        text-decoration: none;
+        color: white;
+        
+        
+
+      
+    }
+    .one{
+        color: black;
+    }
+</style>
+<!-- <link rel="stylesheet" href="{% static 'style.css' %}"> -->
+<br><br>
+<div class="container">
+    <h3>Email Verification with OTP</h3>
+</div>
+
+<!-- <button class="btn btn-primary" style="width:100%">Activate Account</button> -->
+<div class="one">
+    <button class="btn btn-primary"><a href="{% url 'register' %}">Email Registration</a></button>
+</div>
+
+    
+{% endblock content %}
+    
